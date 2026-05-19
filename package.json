@@ -1,0 +1,15 @@
+{
+  "name": "atelier-lucinha-silveira",
+  "version": "1.0.0",
+  "description": "Landing page para o Atelier Lucinha Silveira",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo \"No build step required for static HTML site\""
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
