@@ -4,12 +4,13 @@
     --color-surface: #111111;
     --color-text: #f0f0f0;
     --color-text-muted: #a0a0a0;
-    --color-accent: #d4af37; /* Gold / Champagne */
-    --color-accent-hover: #e6c555;
-    --color-red: #ae2728;
+    --color-accent: #5b83c0; /* LS Blue */
+    --color-accent-hover: #4a6da3;
+    --color-champagne: #c9b9a2;
     
     --font-heading: 'Cormorant Garamond', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Cormorant Garamond', serif; /* Updated to match Apple Garamond style */
+    --font-script: 'Dancing Script', cursive; /* Alternative for American Oak */
     
     --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -73,9 +74,9 @@ h1, h2, h3 {
 .btn-primary {
     display: inline-block;
     background-color: var(--color-accent);
-    color: #000;
+    color: #fff;
     padding: 1rem 2.5rem;
-    font-family: var(--font-body);
+    font-family: 'Inter', sans-serif; /* Keep sans-serif for buttons to maintain readability */
     font-weight: 500;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -137,11 +138,15 @@ h1, h2, h3 {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.logo-img {
+    max-height: 45px;
+    width: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.logo-link:hover .logo-img {
+    opacity: 0.8;
 }
 
 /* ===== HERO SECTION ===== */
@@ -200,7 +205,8 @@ h1, h2, h3 {
 }
 
 .hero h2 em {
-    font-style: italic;
+    font-family: var(--font-script);
+    font-size: 1.2em;
     color: var(--color-accent);
 }
 
@@ -213,7 +219,12 @@ h1, h2, h3 {
 
 /* ===== ABOUT SECTION ===== */
 .about {
-    background-color: var(--color-surface);
+    background-color: var(--color-champagne);
+    color: #000; /* Dark text for readability on champagne */
+}
+
+.about .section-title {
+    color: var(--color-bg);
 }
 
 .about-container {
@@ -224,8 +235,8 @@ h1, h2, h3 {
 }
 
 .about-text p {
-    font-size: 1.1rem;
-    color: var(--color-text-muted);
+    font-size: 1.3rem;
+    color: #222;
     margin-bottom: 1.5rem;
 }
 
@@ -235,11 +246,12 @@ h1, h2, h3 {
 }
 
 .features li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: var(--color-text);
+    color: #000;
     display: flex;
     align-items: center;
+    font-weight: 600;
 }
 
 .about-image {
