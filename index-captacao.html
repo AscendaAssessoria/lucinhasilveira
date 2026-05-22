@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZCV62QT');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Lucinha Silveira | Agende sua Visita</title>
+    <meta name="description" content="Atelier Lucinha Silveira, há 41 anos vestindo os seus melhores momentos. Agende seu horário presencial exclusivo em Cascavel-PR.">
+    
+    <script>document.documentElement.classList.add('js-enabled');</script>
+    
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Dancing+Script:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZCV62QT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <img src="logo.png" alt="Atelier Lucinha Silveira" class="logo-img">
+            </a>
+            <a href="#" class="btn-outline open-modal-btn">Agendar Horário</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="hero.jpg" alt="Noiva deslumbrante com vestido Lucinha Silveira">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="fade-up eyebrow">Exclusividade & Elegância</span>
+            <h2 class="fade-up delay-1">Onde Seus Sonhos <br><em>Serão Reais</em></h2>
+            <p class="fade-up delay-2">Curadoria internacional e 41 anos de experiência vestindo os melhores momentos da sua vida em Cascavel-PR.</p>
+            <a href="#" class="btn-primary fade-up delay-3 open-modal-btn" id="agendar">Reserve seu Horário Exclusivo</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding">
+        <div class="container about-container">
+            <div class="about-text fade-up">
+                <h2 class="section-title">Tradição & Alta Costura</h2>
+                <p>O Atelier Lucinha Silveira é referência em vestidos de noiva e moda festa de alto padrão.</p>
+                <p>Com mais de 4 décadas de história, oferecemos um atendimento personalizado e intimista, para que a escolha do seu vestido seja uma experiência inesquecível e luxuosa.</p>
+                <ul class="features">
+                    <li>✓ 41 anos de excelência</li>
+                    <li>✓ Curadoria de marcas internacionais</li>
+                    <li>✓ Atendimento presencial VIP</li>
+                </ul>
+            </div>
+            <div class="about-image fade-in">
+                <img src="about.jpg" alt="Detalhes de Alta Costura do Atelier Lucinha Silveira">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Footer Section -->
+    <section class="cta section-padding">
+        <div class="container cta-container fade-up">
+            <h2>Pronta para encontrar o vestido perfeito?</h2>
+            <p>Os atendimentos presenciais são limitados para garantir a exclusividade que você merece. Agende agora sua visita.</p>
+            <a href="#" class="btn-primary open-modal-btn">Agendar via WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Atelier Lucinha Silveira. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/atelierlucinhasilveira/" target="_blank">Instagram</a>
+                <a href="https://lucinhasilveira.com.br/" target="_blank">Site Oficial</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Agendamento -->
+    <div id="modal-agendamento" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Quase lá!</h2>
+            <p class="modal-subtitle">Preencha os dados abaixo para iniciar seu agendamento no WhatsApp.</p>
+            <form id="form-agendamento">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(XX) XXXXX-XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="tipo_cliente">Você é:</label>
+                    <select id="tipo_cliente" name="tipo_cliente" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="Noiva">Noiva</option>
+                        <option value="Formanda">Formanda</option>
+                        <option value="Madrinha">Madrinha</option>
+                        <option value="Convidada">Convidada</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="manequim">Qual seu manequim?</label>
+                    <select id="manequim" name="manequim" required>
+                        <option value="" disabled selected>Selecione seu manequim</option>
+                        <option value="34 a 36">34 a 36</option>
+                        <option value="38">38</option>
+                        <option value="40 a 42">40 a 42</option>
+                        <option value="44 a 46">44 a 46</option>
+                        <option value="48 a 52">48 a 52</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cor">Qual a cor escolhida?</label>
+                    <input type="text" id="cor" name="cor" required placeholder="Ex: Branco, Marsala, etc.">
+                </div>
+                <button type="submit" class="btn-primary w-100">Enviar e Agendar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
