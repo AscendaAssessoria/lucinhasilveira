@@ -44,4 +44,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 100);
 
-   
+    // Modal Logic
+    const modal = document.getElementById('modal-agendamento');
+    const openBtns = document.querySelectorAll('.open-modal-btn');
+    const closeBtn = document.querySelector('.close-modal');
+    const form = document.getElementById('form-agendamento');
+
+    if (modal) {
+        openBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('show');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('show');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const tipo = document.getElementById('tipo_cliente').value;
+            const manequim = document.getElementById('manequim').value;
+            const cor = document.getElementById('cor').value;
+
+            const mensagem = `Olá, quero agendar um horário.\n\nMinhas informações:\n- Nome: ${nome}\n- Whatsapp: ${whatsapp}\n- Você é: ${tipo}\n- Qual seu manequim? ${manequim}\n- Qual a cor escolhida? ${cor}`;
+            
+            const encodedMensagem = encodeURIComponent(mensagem);
+            const numero = '5545999910865';
+            
+            window.open(`https://wa.me/${numero}?text=${encodedMensagem}`, '_blank');
+            
+            // Opcional: fechar modal após envio e resetar formulário
+            modal.classList.remove('show');
+            form.reset();
+        });
+    }
+});
