@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renova Estoque II Edição | Atelier Lucinha Silveira</title>
+  <meta name="description" content="II Edição Renova Estoque do Atelier Lucinha Silveira. Vestidos de noiva a partir de R$ 800 e de festa a partir de R$ 200. 08 a 10 de junho online, 11 a 13 de junho presencial em Cascavel.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Renova Estoque II Edição | Atelier Lucinha Silveira">
+  <meta property="og:description" content="Vestidos de noiva e festa com condições especiais. Pré-venda no grupo de WhatsApp.">
+  <meta property="og:type" content="website">
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0F1F33;
+      --navy-deep: #0A1726;
+      --offwhite: #FAF8F4;
+      --white: #FFFFFF;
+      --gold: #B89968;
+      --gold-soft: #C9AC7E;
+      --text-dark: #1A1A1A;
+      --text-light: #FAF8F4;
+      --text-muted-light: rgba(250, 248, 244, 0.65);
+      --text-muted-dark: rgba(26, 26, 26, 0.65);
+      --border-light: rgba(250, 248, 244, 0.12);
+      --border-dark: rgba(15, 31, 51, 0.08);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .serif { font-family: 'Cormorant Garamond', 'Times New Roman', serif; }
+
+    /* ============ HERO ============ */
+    .hero {
+      background: var(--navy);
+      color: var(--text-light);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: 32px; right: 32px; bottom: 32px;
+      border: 1px solid var(--border-light);
+      pointer-events: none;
+    }
+
+    .hero__top {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 80px;
+    }
+
+    .hero__brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      color: var(--text-light);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .hero__sublabel {
+      font-size: 9px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .hero__content { position: relative; z-index: 2; }
+
+    .hero__eyebrow {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+
+    .hero__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(64px, 14vw, 132px);
+      line-height: 0.92;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+    }
+
+    .hero__divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 36px;
+    }
+
+    .hero__sub {
+      max-width: 480px;
+      margin: 0 auto 64px;
+      font-size: 15px;
+      color: var(--text-muted-light);
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .dates {
+      display: flex;
+      gap: 56px;
+      margin-bottom: 64px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .date-block { min-width: 200px; }
+
+    .date-block__label {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .date-block__value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .date-block__caption {
+      font-size: 12px;
+      color: var(--text-muted-light);
+      letter-spacing: 0.5px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 22px 56px;
+      font-size: 11px;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.35s ease;
+      border: 1px solid var(--gold);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .cta-button:hover {
+      background: var(--white);
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .cta-button--outline {
+      background: transparent;
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .cta-button--outline:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* ============ SECTION 2 ============ */
+    .info {
+      background: var(--offwhite);
+      padding: 120px 24px 100px;
+      position: relative;
+    }
+
+    .info__container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .info__header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .info__eyebrow {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .info__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 6vw, 56px);
+      line-height: 1.1;
+      font-weight: 500;
+      color: var(--navy);
+      max-width: 640px;
+      margin: 0 auto 24px;
+    }
+
+    .info__divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 56px;
+      margin-bottom: 100px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    .step__number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 56px;
+      color: var(--gold);
+      margin-bottom: 16px;
+      line-height: 1;
+      font-weight: 400;
+    }
+
+    .step__title {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--navy);
+    }
+
+    .step__text {
+      font-size: 14px;
+      color: var(--text-muted-dark);
+      max-width: 260px;
+      margin: 0 auto;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .prices {
+      background: var(--navy);
+      color: var(--text-light);
+      padding: 64px 32px;
+      margin-bottom: 64px;
+      text-align: center;
+      position: relative;
+    }
+
+    .prices__eyebrow {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+
+    .prices__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 48px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .price-item {
+      padding: 0 16px;
+    }
+
+    .price-item__label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--text-muted-light);
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+
+    .price-item__value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      font-weight: 500;
+      color: var(--text-light);
+      line-height: 1.3;
+    }
+
+    .price-item__highlight {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .info__cta {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .info__cta-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      color: var(--navy);
+      margin-bottom: 32px;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    .cta-button--dark {
+      background: var(--navy);
+      color: var(--white);
+      border-color: var(--navy);
+    }
+
+    .cta-button--dark:hover {
+      background: var(--navy-deep);
+      border-color: var(--navy-deep);
+      color: var(--gold);
+    }
+
+    .footer-mini {
+      text-align: center;
+      padding-top: 56px;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .footer-mini__brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--navy);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .footer-mini__sublabel {
+      font-size: 9px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .footer-mini__info {
+      font-size: 13px;
+      color: var(--text-muted-dark);
+      line-height: 1.9;
+      font-weight: 300;
+    }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 640px) {
+      .hero { padding: 60px 20px 50px; }
+      .hero::before { top: 20px; left: 20px; right: 20px; bottom: 20px; }
+      .hero__top { margin-bottom: 56px; }
+      .hero__brand { font-size: 18px; letter-spacing: 6px; }
+      .dates { gap: 36px; }
+      .date-block { min-width: 0; }
+      .date-block__value { font-size: 22px; }
+      .hero__sub { font-size: 14px; padding: 0 8px; }
+      .cta-button { padding: 18px 36px; font-size: 10px; letter-spacing: 3px; }
+      .info { padding: 80px 20px 60px; }
+      .info__header { margin-bottom: 56px; }
+      .steps { gap: 56px; margin-bottom: 64px; }
+      .prices { padding: 48px 24px; }
+      .prices__grid { gap: 32px; }
+      .price-item__value { font-size: 26px; }
+      .info__cta-text { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__top">
+      <div class="hero__brand">Lucinha Silveira</div>
+      <div class="hero__sublabel">Atelier</div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">II Edição</div>
+      <h1 class="hero__title serif">Renova<br>Estoque</h1>
+      <div class="hero__divider"></div>
+      <p class="hero__sub">
+        Uma seleção curada de vestidos de noiva e festa com condições especiais.
+        A pré-venda acontece dentro do nosso grupo de WhatsApp, antes de qualquer outra divulgação.
+      </p>
+
+      <div class="dates">
+        <div class="date-block">
+          <div class="date-block__label">Online</div>
+          <div class="date-block__value serif">08 a 10 de junho</div>
+          <div class="date-block__caption">Pré-venda no grupo de WhatsApp</div>
+        </div>
+        <div class="date-block">
+          <div class="date-block__label">Presencial</div>
+          <div class="date-block__value serif">11 a 13 de junho</div>
+          <div class="date-block__caption">No atelier, em Cascavel</div>
+        </div>
+      </div>
+
+      <a href="LINK_DO_GRUPO_WHATSAPP_AQUI" target="_blank" rel="noopener" class="cta-button" onclick="if(typeof fbq!=='undefined')fbq('track','Lead');">
+        Entrar no grupo da pré-venda
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ INFO ============ -->
+  <section class="info">
+    <div class="info__container">
+
+      <div class="info__header">
+        <div class="info__eyebrow">Como funciona</div>
+        <h2 class="info__title serif">Garanta o seu antes de todos</h2>
+        <div class="info__divider"></div>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__number serif">01</div>
+          <div class="step__title">Entre no grupo</div>
+          <p class="step__text">
+            Clique no botão e entre no nosso grupo exclusivo de WhatsApp da pré-venda.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step__number serif">02</div>
+          <div class="step__title">Receba as peças</div>
+          <p class="step__text">
+            A partir de 08 de junho a gente publica as fotos com preço dentro do grupo.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step__number serif">03</div>
+          <div class="step__title">Garanta o seu</div>
+          <p class="step__text">
+            Reserva por Pix online ou venha provar no atelier de 11 a 13 de junho.
+          </p>
+        </div>
+      </div>
+
+      <div class="prices">
+        <div class="prices__eyebrow">Condições da II Edição</div>
+        <div class="prices__grid">
+          <div class="price-item">
+            <div class="price-item__label">Vestidos de Noiva</div>
+            <div class="price-item__value serif">a partir de <span class="price-item__highlight">R$ 800</span></div>
+          </div>
+          <div class="price-item">
+            <div class="price-item__label">Vestidos de Festa</div>
+            <div class="price-item__value serif">a partir de <span class="price-item__highlight">R$ 200</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info__cta">
+        <p class="info__cta-text">
+          A pré-venda começa antes da loja abrir.<br>
+          Garante o teu acesso agora.
+        </p>
+        <a href="LINK_DO_GRUPO_WHATSAPP_AQUI" target="_blank" rel="noopener" class="cta-button cta-button--dark" onclick="if(typeof fbq!=='undefined')fbq('track','Lead');">
+          Entrar no grupo da pré-venda
+        </a>
+      </div>
+
+      <div class="footer-mini">
+        <div class="footer-mini__brand">Lucinha Silveira</div>
+        <div class="footer-mini__sublabel">Atelier</div>
+        <div class="footer-mini__info">
+          Rua Antônio Maeda, 229 — Cascavel/PR<br>
+          (45) 99991-0865
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/></noscript>
+</body>
+</html>
